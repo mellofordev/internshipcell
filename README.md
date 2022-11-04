@@ -14,8 +14,8 @@ For backend and apis im gonna use django webframework and graphql
 
 ## Get started 
 
-To start working on the project follow the below steps 
-1.First fork this repo 
+To start working on the project follow the below steps <br>
+1.First fork this repo <br>
 2.Now clone the repo to your local machine 
 ```bash
 git clone https://github.com/yourusername/internshipcell.git
@@ -28,7 +28,7 @@ cd internshipcell
 ```bash
 npm install 
 ```
-ps: make sure you have installed node.js 
+ps: make sure you have installed node.js <br>
 5.Now run the local server 
 ```bash
 npm start 
