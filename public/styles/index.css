@@ -167,6 +167,10 @@ body{
     margin-right:70px;
 }
 @media (max-width:600px){
+    .header{
+        background-color: #18171A;
+        border-radius: 25px;
+    }
     .title{
         font-size: 45px;
     }
@@ -183,8 +187,8 @@ body{
     .discriptionFont{
         box-sizing: border-box;
     }
-    .committe{
-        display: none;
+    .main-container{
+        overflow-x: auto;
     }
     .secondary-viewFlex p{
         margin-left: 0px;
@@ -198,7 +202,8 @@ body{
         margin-top:0px;
     }
     .hamb{
-        margin-right:5px;
+        margin-right:15px;
+        margin-top:15px;
     }
     .title-margins{
         margin-left:5px;

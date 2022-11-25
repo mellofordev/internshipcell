@@ -29,18 +29,18 @@
         </header>
        
         <div data-scroll-section class="firstviewer">
-            <h1 data-scroll  data-scroll-position="top" data-scroll-speed="2" class="title">INTERSHIP CELL</h1>
-            <img data-scroll data-scroll-speed="-2" data-scroll-position="top" src="https://i.pinimg.com/originals/7c/f9/6e/7cf96e5878cc8aad3e704b81150d4d47.png" class="first-viewer-image" />
+            <h1 data-scroll  data-scroll-position="top" data-scroll-speed="3" class="title">INTERSHIP CELL</h1>
+            <img data-scroll data-scroll-speed="1" data-scroll-position="top" src="https://i.pinimg.com/originals/7c/f9/6e/7cf96e5878cc8aad3e704b81150d4d47.png" class="first-viewer-image" />
         </div>
         <div data-scroll-section class="secondviewer">
             <h1 data-scroll data-scroll-speed="3" data-scroll-position="center" data-scroll-direction="vertical"  class="secondary-title">About</h1>
            <div class="secondary-viewFlex about-container">
                 <p class="discriptionFont">Internship cell is an initiative under the SCT Students Union to create an oppurtunity in internship for everyone around us with a goal of creating a team and efficient work environment with cool atmosphere.</p>
-                <img data-scroll data-scroll-speed="-3" src="https://sct-arts-2022.herokuapp.com/static/media/Logo_Union.5a22580ee3bbd85f15a0.png" class="image-poster">
+                <img data-scroll data-scroll-speed="1" src="https://sct-arts-2022.herokuapp.com/static/media/Logo_Union.5a22580ee3bbd85f15a0.png" class="image-poster">
            </div>
         </div>
-        <div data-scroll-section class="secondviewer committe">
-            <h1  class="secondary-title" data-scroll data-scroll-position="center" data-scroll-speed="1">Meet the Team</h1>
+        <div data-scroll-section  class="secondviewer committe">
+            <h1  class="secondary-title" data-scroll data-scroll-speed="3">Meet the Team</h1>
             <p class="discriptionFont">Meet the executive committe of Internship cell ,SCT</p>
             <div class="main-container">
                 <div class="box-container">
@@ -60,24 +60,35 @@
                 </div>
             </div>
         </div>
-        <div data-scroll-section  class="thirdviewer events-container">
+        <div data-scroll-section data-scroll-speed="4" class="thirdviewer events-container">
             <h1 class="secondary-title" style="color:black">Events and opportunity</h1>
             <button class="cutted-style" style="width:300px;background-color:aquamarine;border-color:white;color:black;">Check out new events</button>
         </div>
-        <div data-scroll-section data-scroll-speed="-3" class="thirdviewer" style="background-color:transparent;justify-content:flex-start;align-items:flex-start">
+        <div data-scroll-section data-scroll-speed="3" class="thirdviewer" style="background-color:transparent;justify-content:flex-start;align-items:flex-start">
             <h1 class="secondary-title">Gallery</h1>
             <p class="discriptionFont">Check out the latest and past events photos from internship cell.</p>
+        </div>
+        <div data-scroll-section data-scroll-speed="3" class="thirdviewer" style="background-color:aliceblue;justify-content:flex-start;align-items:flex-start;height:300px;">
+            <h1 class="secondary-title" style="color:black;margin:15px;">Internship,cell SCTCE</h1>
+            <p class="discriptionFont" style="color:black;">MIT Lisence</p>
         </div>
     </div>
     
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-<script>
+<script type="text/javascript">
         (function () {
     var scroll = new LocomotiveScroll({
         el:document.querySelector('[data-scroll-container]'),
         smooth:true,
+        smarthphone:{
+            smooth:true,
+        },
+        tablet:{
+            breakpoint:0,
+            smooth:true
+        }
     });
 })();
 </script>
