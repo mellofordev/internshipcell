@@ -7,6 +7,8 @@
     <title>Internship cell sctce</title>
     <link rel="stylesheet" href="/styles/index.css"/>
     <link rel="stylesheet" href="/styles/base.css"/>
+    <link href="/website/css/uicons-solid-rounded.css"
+    rel="stylesheet">
 </head>
 <body>
     <div class="navigation-container" id="navC" style="display:none;">
@@ -18,24 +20,26 @@
             <h1 class="secondary-title blackedFont">team</h1>
         </div>
         <div>
-            <button class="hamb" style="color:black;" onclick="onOpen('close')">X</button>
+            <button class="hamb" style="color:black;" onclick="onOpen('close')"><i class="fi fi-br-cross" style="color:white;"></i></button>
         </div>
         
     </div>
     <div data-scroll-container id="mainC" style="display:content;">
         <header class="header">
             <h1 class="secondary-title title-margins">SCTCE</h1>
-            <button class="hamb" onclick="onOpen('open')">=</button>
+            <button class="hamb" onclick="onOpen('open')"><i class="fi fi-rr-menu-burger"></i></button>
         </header>
        
         <div data-scroll-section class="firstviewer">
             <h1 data-scroll  data-scroll-position="top" data-scroll-speed="3" class="title">INTERSHIP CELL</h1>
-            <img data-scroll data-scroll-speed="1" data-scroll-position="top" src="https://i.pinimg.com/originals/7c/f9/6e/7cf96e5878cc8aad3e704b81150d4d47.png" class="first-viewer-image" />
+            <img data-scroll data-scroll-speed="1" data-scroll-position="top" id="headerimg" src="https://i.ibb.co/VMt76gH/internship-logo.png" class="first-viewer-image" />
         </div>
         <div data-scroll-section class="secondviewer">
             <h1 data-scroll data-scroll-speed="3" data-scroll-position="center" data-scroll-direction="vertical"  class="secondary-title">About</h1>
            <div class="secondary-viewFlex about-container">
-                <p class="discriptionFont">Internship cell is an initiative under the SCT Students Union to create an oppurtunity in internship for everyone around us with a goal of creating a team and efficient work environment with cool atmosphere.</p>
+                <p class="discriptionFont">The intership cell of SCTCE has been founded by the SCT Students Union with the aim of providing internship oppurtunities for all our students.
+                    Most of our students wish to complete interships and earn money by the side. But they don't know where to find good trustable interships and even if they do, they might not have the right skills for the job.
+                    The internship cell provides free workshops in collaboration with relevent societies in different fields to upskill yourselves to the level of being a notable candidate for intership among many applications.</p>
                 <img data-scroll data-scroll-speed="1" src="https://sct-arts-2022.herokuapp.com/static/media/Logo_Union.5a22580ee3bbd85f15a0.png" class="image-poster">
            </div>
         </div>
@@ -68,9 +72,15 @@
             <h1 class="secondary-title">Gallery</h1>
             <p class="discriptionFont">Check out the latest and past events photos from internship cell.</p>
         </div>
-        <div data-scroll-section data-scroll-speed="3" class="thirdviewer" style="background-color:aliceblue;justify-content:flex-start;align-items:flex-start;height:300px;">
+        <div data-scroll-section data-scroll-speed="3" class="footer" style="background-color:aliceblue;justify-content:flex-start;align-items:flex-start;height:300px;">
             <h1 class="secondary-title" style="color:black;margin:15px;">Internship,cell SCTCE</h1>
-            <p class="discriptionFont" style="color:black;">MIT Lisence</p>
+            <div style="display:flex;flex-direction:row;justify-content:flex-start;">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="height:50px;width:50px;margin:20px;"/>
+                <a href="https://github.com/mellofordev/internshipcell" class="discriptionFont" style="color:black;margin-left:5px;margin-top:25px;">Open to contribution</a>
+            </div>
+            <div>
+                
+            </div>
         </div>
     </div>
     
@@ -97,6 +107,7 @@
        
        var get_main_container= document.getElementById("mainC");
        var get_navigation_container= document.getElementById("navC");
+      
        if(props=='open'){
         get_main_container.style.display="none";
         get_navigation_container.style.display="flex";
@@ -105,6 +116,7 @@
         get_main_container.style.display="block";
         get_navigation_container.style.display="none";
        }
+       
        
 
     }
