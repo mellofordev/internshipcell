@@ -7,8 +7,9 @@
     <title>Internship cell sctce</title>
     <link rel="stylesheet" href="/styles/index.css"/>
     <link rel="stylesheet" href="/styles/base.css"/>
-    <link href="/website/css/uicons-solid-rounded.css"
-    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
     <div class="navigation-container" id="navC" style="display:none;">
@@ -20,19 +21,19 @@
             <h1 class="secondary-title blackedFont">team</h1>
         </div>
         <div>
-            <button class="hamb" style="color:black;" onclick="onOpen('close')"><i class="fi fi-br-cross" style="color:white;"></i></button>
+            <button class="hamb" style="color:black;" onclick="onOpen('close')"><span class="material-symbols-outlined">close</span></button>
         </div>
         
     </div>
     <div data-scroll-container id="mainC" style="display:content;">
         <header class="header">
             <h1 class="secondary-title title-margins">SCTCE</h1>
-            <button class="hamb" onclick="onOpen('open')"><i class="fi fi-rr-menu-burger"></i></button>
+            <button class="hamb" onclick="onOpen('open')"><span class="material-symbols-outlined">menu</span></button>
         </header>
        
         <div data-scroll-section class="firstviewer">
             <h1 data-scroll  data-scroll-position="top" data-scroll-speed="3" class="title">INTERNSHIP CELL</h1>
-            <img data-scroll data-scroll-speed="1" data-scroll-position="top" id="headerimg" src="https://i.ibb.co/VMt76gH/internship-logo.png" class="first-viewer-image" />
+            <img data-scroll data-scroll-speed="1" data-scroll-position="top" id="headerimg" src="https://i.ibb.co/mNsJ5Yb/internship-logo.png" class="first-viewer-image" />
         </div>
         <div data-scroll-section class="secondviewer">
             <h1 data-scroll data-scroll-speed="3" data-scroll-position="center" data-scroll-direction="vertical"  class="secondary-title">About</h1>
@@ -40,12 +41,14 @@
                 <p class="discriptionFont">The intership cell of SCTCE has been founded by the SCT Students Union with the aim of providing internship oppurtunities for all our students.
                     Most of our students wish to complete interships and earn money by the side. But they don't know where to find good trustable interships and even if they do, they might not have the right skills for the job.
                     The internship cell provides free workshops in collaboration with relevent societies in different fields to upskill yourselves to the level of being a notable candidate for intership among many applications.</p>
-                <img data-scroll data-scroll-speed="1" src="https://sct-arts-2022.herokuapp.com/static/media/Logo_Union.5a22580ee3bbd85f15a0.png" class="image-poster">
+                <img data-scroll data-scroll-speed="1" src="https://i.ibb.co/j3qrGYD/sct-students-union.png" class="image-poster">
            </div>
         </div>
-        <div data-scroll-section  class="secondviewer committe">
-            <h1  class="secondary-title" data-scroll data-scroll-speed="3">Meet the Team</h1>
-            <p class="discriptionFont">Meet the executive committe of Internship cell ,SCT</p>
+        <div data-scroll-section  class="committe">
+            <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                <h1  class="secondary-title" data-scroll data-scroll-speed="3">Meet the Team</h1>
+                <p class="discriptionFont">Meet the executive committe of Internship cell ,SCT</p>
+            </div>
             <div class="main-container">
                 <div class="box-container">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Richard-m-stallman-belfast.jpg">
