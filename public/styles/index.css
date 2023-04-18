@@ -6,7 +6,9 @@ body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
-
+.a-enter-vr-button{
+    display: none;
+}
 .header{
     display: flex;
     flex-direction: row;
@@ -35,7 +37,7 @@ body{
 
 }
 .first-viewer-image{
-    height:55%;
+    height:100%;
     width: 75%;
     border-radius:300px;
     object-fit: cover;
@@ -48,6 +50,7 @@ body{
     font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
+    z-index: 30;
 }
 .secondary-title{
     font-family:'Anton', sans-serif;

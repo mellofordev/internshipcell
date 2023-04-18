@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship cell sctce</title>
+    <title>startupx</title>
     <link rel="stylesheet" href="/styles/index.css"/>
     <link rel="stylesheet" href="/styles/base.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script> 
 </head>
 <body>
     <div class="navigation-container" id="navC" style="display:none;">
@@ -28,12 +29,16 @@
     </div>
     <div data-scroll-container id="mainC" style="display:content;">
         <header class="header">
-            <h1 class="secondary-title title-margins">SCTCE</h1>
+            <h1 class="secondary-title title-margins">IEEE SCT SB</h1>
             <button class="hamb" onclick="onOpen('open')"><span class="material-symbols-outlined">menu</span></button>
         </header>
        
         <div data-scroll-section class="firstviewer">
-            <h1 data-scroll  data-scroll-position="top" data-scroll-speed="3" class="title">INTERNSHIP CELL</h1>
+            <a-scene >
+                
+                <a-entity environment="preset: starry; shadow: true"></a-entity>
+            </a-scene>
+            <h1 data-scroll  data-scroll-position="top" data-scroll-speed="3" class="title">S T A R T UP  X</h1>
             <img data-scroll data-scroll-speed="1" data-scroll-position="top" id="headerimg" src="https://i.ibb.co/mNsJ5Yb/internship-logo.png" class="first-viewer-image" />
         </div>
         <div data-scroll-section class="secondviewer">
